@@ -1,0 +1,46 @@
+/* Reset the default styles of an unordered list */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the menu items with a border */
+  .menu li {
+    margin: 5px; /* Add a border for a buttony look */
+  }
+  
+  /* Use CSS flex to create a horizontal layout */
+  .menu ul {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  /* Make anchor tags block elements with padding */
+  .menu a {
+    display: block; 
+    border: 3px solid #615770; 
+    border-radius: 5px;
+    padding: 10px; 
+    text-decoration: none;
+  }
+  
+  /* Style the anchor tags in the menu with a different color */
+  .menu a {
+    color: #333; /* Default color for non-current items */
+  }
+  
+  /* Style the anchor tags on hover with a different color and background */
+  .menu a:hover {
+    color: #fff; /* Text color on hover */
+    background-color: #333; /* Background color on hover */
+  }
+  
+  /* Style the current menu item differently */
+    .menu a.is-current {
+        color: #fff; /* Text color on hover */
+        background-color: #333; /* Background color on hover */
+    }
+    
+
+  

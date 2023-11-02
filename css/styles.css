@@ -1,0 +1,187 @@
+/* Default styles */
+body {
+  background-color: #E2E8F0;
+  color: #2D3748;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #4A90E2;
+  border-bottom: 2px solid #4A90E2;
+  padding-bottom: 8px;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+  /* Background Image Settings */
+  background-image: url('../images/Aurelius_logo.png');
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center left; /* Positioning the logo to the left and vertically centered */
+  background-size: auto 70%; /* Adjusting the size of the logo. Setting height to 70% of the h2 height and width scales accordingly. Adjust as needed */
+  
+  
+  /* Padding */
+  padding-left: 50px; /* Add left padding to move the text away from the logo and the left edge. Adjust as per the logo size */
+  padding-top: 10px;  /* Depending on the height of the logo, you might want to adjust top padding */
+  padding-bottom: 10px; /* Similarly, adjust the bottom padding as per the logo's height */
+}
+
+
+/* Paragraphs */
+p {
+  margin-top: 8px;
+  line-height: 1.8em;
+}
+
+/* Lists */
+ol, ul {
+  padding-left: 20px;
+  list-style-type: circle; /* Add a bullet style */
+}
+
+/* Links */
+a {
+  color: #3498DB;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s; /* Smooth transition on hover */
+}
+
+/* Pseudo-classes */
+li:first-child {
+  font-weight: bold;
+  color: #2E86C1;
+}
+
+/* p:last-child {
+  color: #8395A7;
+} */
+/*
+p:nth-of-type(odd){
+  background-color: #2E86C1;
+}
+*/
+/* a:hover {
+  color: #E74C3C;
+} */
+
+/* New Classes */
+.special-text {
+  font-style: italic;
+  color: #8E44AD;
+}
+
+.highlight {
+  background-color: #FAD02E;
+  padding: 2px 4px;
+}
+
+.dark-background {
+  background-color: #34495E;
+  color: #E2E8F0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 2 fractions for article and 1 fraction for aside */
+  grid-gap: 20px; /* Optional: space between grid items */
+
+  
+}
+
+
+header, footer, .lead {
+  grid-column: 1 / 3; /* Spanning from the first grid line to the third, thus covering both columns */
+}
+
+
+article {
+  grid-column: 1; /* Positioned in the first column */
+}
+
+aside {
+  grid-column: 2; /* Positioned in the second column */
+}
+
+
+.lead {
+  /* Border styles */
+  border: 3px solid #2c3e50; /* This is a dark shade of blue, but you can change to any color that matches your design */
+  
+  /* Spacing styles */
+  padding: 20px; /* Ensures content doesn't touch the border */
+  margin: 20px 0; /* Adds vertical spacing above and below the lead section */
+  
+/* Background styles */
+background-image: url('../images/wallbg.jpg');
+background-size: cover;
+background-position: center; /* Centers the background image */
+background-repeat: no-repeat; /* Prevents the background image from repeating */
+ background-color: rgba(236, 240, 241, 0.5); /* Semi-transparent light greyish background, useful when the image doesn't cover the entire element */
+
+
+/* Text styles */
+font-size: 1.1em;
+line-height: 1.8; /* Increased line height for better readability */
+color: black; /* Making the text light colored for better contrast against most images */
+font-weight: bold; /* Bold font for better readability */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to the text for better contrast */
+
+
+  display: flex; /* Enable flexbox layout */
+  flex-wrap: wrap;
+  gap: 20px; 
+
+
+}
+
+.lead h2 {
+  flex-basis: 100%; /* Allows the h2 to take the full width of its parent, thus placing it above the rest */
+}
+
+.lead p {
+  flex: 1; /* Allow the paragraph to grow and take up available space */
+  margin-right: 20px; /* A gap between text and image */
+}
+
+
+
+
+
+
+.flowing-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 10px; /* Provides spacing between the boxes */
+}
+
+.flowing-boxes li {
+  flex-basis: 200px;
+  list-style-type: none;
+  border: 1px solid #ccc; /* Adding border */
+  margin: 5px; /* Adding margin */
+  padding: 10px; /* Adding padding */
+  border-radius: 5px; /* Adding border-radius */
+  background-color: #f0f0f0; /* Adding background color */
+ 
+}
+
+ .wrap {
+   float: right; 
+   margin: 5px;
+  }
